@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<!--
+	Resto by GetTemplates.co
+	URL: https://gettemplates.co
+-->
+<html >
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+    p {font-family: 'Kanit', sans-serif;
+       font-size: 18px;
+      }
+    h1,h2,h3,h4,h5,h6 {
+        font-family: 'Kanit', sans-serif;
+                         }
+    a {font-family: 'Kanit', sans-serif;
+   font-size: 14px;
+    }
+
+    body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+</style>
+  
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ดิน</title>
+    <meta name="description" content="Resto">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/select2/select2.min.css">
+    <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/brands.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Josefin+Sans:300,400,700">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.min.css">
+    
+      
+
+    <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+</head>
+<body data-spy="scroll" data-target="#navbar">
+
+    <!-- <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script>
+        var car = function(){
+            var n1 = +$('#wide').val();
+            var n2 = +$('#long').val();
+            var n3 = +$('#deep').val();
+
+            alert(n1+""+n2);
+
+        }
+
+    </script> -->
+
+	<div id="side-nav" class="sidenav">
+	<a href="javascript:void(0)" id="side-nav-close">&times;</a>
+	
+	<div class="sidenav-content">
+		<p>
+			Kuncen WB1, Wirobrajan 10010, DIY
+		</p>
+		<p>
+			<span class="fs-16 primary-color">(+68) 120034509</span>
+		</p>
+		<p>info@yourdomain.com</p>
+	</div>
+</div>	<div id="side-search" class="sidenav">
+	<a href="javascript:void(0)" id="side-search-close">&times;</a>
+	<div class="sidenav-content">
+		<form action="">
+
+			<div class="input-group md-form form-sm form-2 pl-0">
+			  <input class="form-control my-0 py-1 red-border" type="text" placeholder="Search" aria-label="Search">
+			  <div class="input-group-append">
+			    <button class="input-group-text red lighten-3" id="basic-text1">
+			    	<i class="fas fa-search text-grey" aria-hidden="true"></i>
+			    </button>
+			  </div>
+			</div>
+
+		</form>
+	</div>
+	
+ 	
+</div>	<div class="w3-top">
+    <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+      <!-- Right-sided navbar links. Hide them on small screens -->
+      <div class="w3-right w3-hide-small">
+        <a href="home.html" class="w3-bar-item w3-button">หน้าแรก</a>
+        <a href="step.html" class="w3-bar-item w3-button">ขั้นตอนการสั่ง</a>
+        <a href="sum.php" class="w3-bar-item w3-button">โปรแกรมคำนวณ</a>
+        <a href="contact.php" class="w3-bar-item w3-button">ติดต่อเรา</a>
+        <a href="index.php" class="w3-bar-item w3-button">เข้าสู่ระบบ</a>
+      </div>
+    </div>
+  </div>			<!-- Special Dishes Section -->
+<section id="gtco-special-dishes" class="bg-grey section-padding">
+    <div class="container">
+        <div class="section-content">
+            <div class="heading-section text-center">
+                <span class="subheading">
+                    Specialties
+                </span>
+                <h2>
+                    Special Dishes
+                </h2>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-5 col-md-6 align-self-center py-5">
+                    <h2 class="special-number">01.</h2>
+                    <div class="dishes-text">
+                        <h3><span></span><font face="Kanit" font size="5">เลือกประเภทสินค้า</font></h3>
+                        <p class="pt-3"> ขั้นแรก ลูกค้าจะต้องเลือกดูประเภทสินค้าบนหน้าเว็ปว่าสินค้าแต่ละประเภทมีอะไรบ้าง ซึ่งหน้าสินค้าจะอยู่ในหน้าของ " หน้าแรก " จากนั้นพอเห็นสินค้าที่ต้องการ ก็ให้กดไปที่ปุ่มสีแดง ดังภาพ 
+                            <br>
+                            <br>
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-2 col-md-6 align-self-center mt-4 mt-md-0">
+                    <img src="images/แนะนำ2.PNG" alt="" class="img-fluid shadow w-100">
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-5 col-md-6 align-self-center order-2 order-md-1 mt-4 mt-md-0">
+                    <img src="images/แนะนำ3.PNG" alt="" class="img-fluid shadow w-100">
+                </div>
+                <div class="col-lg-5 offset-lg-2 col-md-6 align-self-center order-1 order-md-2 py-5">
+                    <h2 class="special-number">02.</h2>
+                    <div class="dishes-text">
+                        <h3><span></span><font face="Kanit" font size="5">เลือกสินค้า</font></h3>
+                        <p class="pt-3"> หลังจากที่เลือกประเภท ลูกค้าสามารถเลือกสินค้าที่ลูกค้าต้องการได้บนหน้าเว็ป และเมื่อได้สินค้าที่ต้องการก็ให้กดปุ่มนี้สีแดงที่เขียนว่า "สั่งเดี๋ยวนี้" ดังภาพ                      
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-5 col-md-6 align-self-center py-5">
+                    <h2 class="special-number">03.</h2>
+                    <div class="dishes-text">
+                        <h3><span></span><font face="Kanit" font size="5">คำนวณปริมาณ</font></h3>
+                        <p class="pt-3"> เป็นการคำนวณปริมาณของสินค้าที่ลูกค้าต้องใช้ เช่น ลูกค้าต้องการถมที่ดินที่มีความกว้าง 5 เมตร ยาว 30 เมตร ลึก 20 เซนติเมตร ลูกค้าต้องใช้ดินกี่รถ ซึ่งระบบจำทำการคำรวณให้ท่านเองโดยให้ใส่ ความกว้าง ความยาว และความลึก ดังรูปภาพ  
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-2 col-md-6 align-self-center mt-4 mt-md-0">
+                    <img src="images/แนะนำแก้.PNG" alt="" class="img-fluid shadow w-100">
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-5 col-md-6 align-self-center order-2 order-md-1 mt-4 mt-md-0">
+                    <img src="images/แนะนำ4.PNG" alt="" class="img-fluid shadow w-100">
+                </div>
+                <div class="col-lg-5 offset-lg-2 col-md-6 align-self-center order-1 order-md-2 py-5">
+                    <h2 class="special-number">04.</h2>
+                    <div class="dishes-text">
+                        <h3><span></span><font face="Kanit" font size="5">เข้าสู่ระบบ</font></h3>
+                        <p class="pt-3"> จากนั้นพอลูกค้ากดสั่งสินค้าระบบจะเด้งไปหน้าสั่งสินค้าเลย แต่หากลูกค้ายังไม่เข้าสู่ระบบ ระบบจะให้ลูกค้าล็อคอินก่อนโดยใส่ Id Phone และ password แล้วกด Login แต่หากลูกค้ายังไม่มีรหัสสมาชิก ลูกค้าสามารถสมัครได้ด้วยตนเองโดยกดที่เขียนว่า Register here ดังที่วงกลมไว้ในภาพ และจากนั้นให้ลูกค้าสมัครสมาชิกด้วยหมายเลขโทรศัพท์(ของจริงเท่านั้น!!)  
+                        </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-5 col-md-6 align-self-center py-5">
+                    <h2 class="special-number">05.</h2>
+                    <div class="dishes-text">
+                        <h3><span></span> </span><font face="Kanit" font size="5">เลือกประเภทสินค้า</font></h3>
+                        <p class="pt-3"> หลังจากที่ทำการเข้าสู่ระบบเรียบร้อย ให้ลูกค้ากดเลือกสินค้าอีกครั้งโดยกดที่ปุ่มที่วงไว้ในภาพ
+                        </div>
+                </div>
+                <div class="col-lg-5 offset-lg-2 col-md-6 align-self-center mt-4 mt-md-0">
+                    <img src="images/แนะนำ5.PNG" alt="" class="img-fluid shadow w-100">
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-5 col-md-6 align-self-center order-2 order-md-1 mt-4 mt-md-0">
+                    <img src="images/แนะนำ6.PNG" alt="" class="img-fluid shadow w-100">
+                </div>
+                <div class="col-lg-5 offset-lg-2 col-md-6 align-self-center order-1 order-md-2 py-5">
+                    <h2 class="special-number">06.</h2>
+                    <div class="dishes-text">
+                        <h3><span></span><font face="Kanit" font size="5">เลือกสินค้า</font></h3>
+                        <p class="pt-3"> จากนั้นให้ลูกค้าเลือกสินค้าแล้วกดที่วงกลมไว้ ดังภาพ
+                        </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-5 col-md-6 align-self-center py-5">
+                    <h2 class="special-number">07.</h2>
+                    <div class="dishes-text">
+                        <h3><span></span> </span><font face="Kanit" font size="5">กรอกรายละเอียดสินค้า</font></h3>
+                        <p class="pt-3"> ในหน้านี้ ให้ลูกค้าทำการกรอกรายละเอียดสินค้าต่าง ๆ ให้ครบถ้วน จากนั้นให้กดปุ่มสีฟ้าที่วงกลมไว้ในภาพ
+                        </div>
+                </div>
+                <div class="col-lg-5 offset-lg-2 col-md-6 align-self-center mt-4 mt-md-0">
+                    <img src="images/แนะนำ7.PNG" alt="" class="img-fluid shadow w-100">
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-5 col-md-6 align-self-center order-2 order-md-1 mt-4 mt-md-0">
+                    <img src="images/แนะนำ8.PNG" alt="" class="img-fluid shadow w-100">
+                </div>
+                <div class="col-lg-5 offset-lg-2 col-md-6 align-self-center order-1 order-md-2 py-5">
+                    <h2 class="special-number">08.</h2>
+                    <div class="dishes-text">
+                        <h3><span></span><font face="Kanit" font size="5">คำสั่งซื้อ</font></h3>
+                        <p class="pt-3"> หลังจากที่ลูกค้าทำการสั่งซื้อเสร็จ ระบบก็จะโชว์คำสั่งซื้อของลูกค้าตรงหัวข้อ "ข้อมูลการสั่งซื้อ" หลังจากนั้นลูกค้าต้องรอทางผู้ขายยืนยันการสั่งพร้อมกับบวกค่าส่งเพิ่มขึ้นมาในหัวข้อ "ติดตามการสั่งซื้อ" แล้วให้ลูกค้ากดปุ่มสถานะดังภาพที่วงกลมไว้
+                        </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-5 col-md-6 align-self-center py-5">
+                    <h2 class="special-number">09.</h2>
+                    <div class="dishes-text">
+                        <h3><span></span> </span><font face="Kanit" font size="5">ยืนยันสถานะคำสั่งซื้อ</font></h3>
+                        <p class="pt-3"> ในหน้านี้จะเป็นการยืนยันคำสั่งซื้อของลูกค้า ซึ่งหน้านี้จะโชว์ข้อมูลการสั่งซื้อของลูกค้าและราคารวมทั้งหมดที่ลูกค้าต้องจ่าย ให้ลูกค้ากดที่ช่องสถานะจะมีคำว่า "ยืนยัน" เพื่อยืนยันคำสั่งซื้อ , "ยกเลิก" เพื่อยกเลิกคำสั่งซื้อ
+                        </div>
+                </div>
+                <div class="col-lg-5 offset-lg-2 col-md-6 align-self-center mt-4 mt-md-0">
+                    <img src="images/แนะนำ99.PNG" alt="" class="img-fluid shadow w-100">
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-5 col-md-6 align-self-center order-2 order-md-1 mt-4 mt-md-0">
+                    <img src="images/แนะนำ12.PNG" alt="" class="img-fluid shadow w-100">
+                </div>
+                <div class="col-lg-5 offset-lg-2 col-md-6 align-self-center order-1 order-md-2 py-5">
+                    <h2 class="special-number">10.</h2>
+                    <div class="dishes-text">
+                        <h3><span></span><font face="Kanit" font size="5">รอคำสั่งซื้อสำเร็จ</font></h3>
+                        <p class="pt-3"> ซึ่งในหน้านี้แสดงให้เห็นว่า หลังจากที่ลูกค้าสั่งสินค้าเสร็จเรียบร้อยแล้ว ต้องรอทางด้านผู้ขายยืนยันให้เสร็จสิ้นก่อนพร้อมทั้งลูกค้าต้องจ่ายค่ามัดจำก่อน 40 % ของเงินทั้งหมด ซึ่งเลขบัญชีจะอยู่ในหน้า "ติดต่อเรา" จากนั้นชำระเงินเสร็จสิ้นระบบจึงจะแสดงรายการสั่งซื้อสำเร็จ
+                        </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-5 col-md-6 align-self-center py-5">
+                    <h2 class="special-number">11.</h2>
+                    <div class="dishes-text">
+                        <h3><span></span> </span><font face="Kanit" font size="5">คำสั่งซื้อสำเร็จ</font></h3>
+                        <p class="pt-3"> หน้านี้จะเป็นหน้าที่โชว์ข้อมูลการสั่งซื้อของลูกค้าที่จ่ายเงินมัดจำแล้ว ซึ่งจะอยู่ข้างบนแถบด้านซ้ายมือที่เขียนว่า "รายการสั่งซื้อสำเร็จ"
+                        </div>
+                </div>
+                <div class="col-lg-5 offset-lg-2 col-md-6 align-self-center mt-4 mt-md-0">
+                    <img src="images/แนะนำ10.PNG" alt="" class="img-fluid shadow w-100">
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-5 col-md-6 align-self-center order-2 order-md-1 mt-4 mt-md-0">
+                    <img src="images/แนะนำ11.PNG" alt="" class="img-fluid shadow w-100">
+                </div>
+                <div class="col-lg-5 offset-lg-2 col-md-6 align-self-center order-1 order-md-2 py-5">
+                    <h2 class="special-number">12.</h2>
+                    <div class="dishes-text">
+                        <h3><span></span><font face="Kanit" font size="5">ติดต่อเรา</font></h3>
+                        <p class="pt-3"> ส่วนของหน้านี้จะเป็นหน้าแสดงข้อมูลต่าง ๆ ของเราไว้ และไว้ให้ลูกค้าแสดง feedback ตอบกลับเรามา หรือว่าจะสอบถามรายละเอียดต่าง ๆ ได้
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</div>
+	<!-- External JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+	<script src="vendor/bootstrap/popper.min.js"></script>
+	<script src="vendor/bootstrap/bootstrap.min.js"></script>
+	<script src="vendor/select2/select2.min.js "></script>
+	<script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+	<script src="https://cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js"></script>
+	<script src="vendor/stellar/jquery.stellar.js" type="text/javascript" charset="utf-8"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
+
+	<!-- Main JS -->
+	<script src="js/app.min.js "></script>
+</body>
+</html>
